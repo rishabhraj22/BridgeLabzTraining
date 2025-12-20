@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class TriangularParkRun {
-
+    
     // Method to calculate number of rounds
     public static double calculateRounds(double side1, double side2, double side3) {
         double perimeter = side1 + side2 + side3; // perimeter in meters
