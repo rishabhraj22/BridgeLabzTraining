@@ -26,5 +26,5 @@ public class PosNegZero{
 	System.out.println(result);
 	
 	}
-	}
+    }
 
