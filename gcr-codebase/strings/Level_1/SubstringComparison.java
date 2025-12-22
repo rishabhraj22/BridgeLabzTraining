@@ -33,7 +33,7 @@ public class SubstringComparison {
 
         Scanner sc = new Scanner(System.in);
 
-        // Taking input
+        // Taking input from user
         System.out.print("Enter the string: ");
         String text = sc.next();
 
@@ -49,11 +49,10 @@ public class SubstringComparison {
         // Creating substring using built-in method
         String builtInSubstring = text.substring(start, end);
 
-        // Comparing both substrings
-        boolean comparisonResult =
-                compareStringsUsingCharAt(manualSubstring, builtInSubstring);
+        // Comparing both the substrings
+        boolean comparisonResult = compareStringsUsingCharAt(manualSubstring, builtInSubstring);
 
-        // Displaying results
+        // Displaying results of strings
         System.out.println("\nSubstring using charAt(): " + manualSubstring);
         System.out.println("Substring using substring(): " + builtInSubstring);
         System.out.println("Are both substrings equal? " + comparisonResult);
