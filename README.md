@@ -1,130 +1,44 @@
-### 📅 Week 1: Git, GitHub & Java Programming Fundamentals
+🗓 Day 9 – Java OOPS Concepts, Scenario-Based Problems & Git Branch Management
 
----
+(Date: 25-Dec-2025)
 
-### 🗓 Day 1 – Git & GitHub Setup  
-**(Date: 16-Dec-2025)**
+Studied and implemented Object-Oriented Programming (OOPS) concepts in Java, including:
 
-- Installed and configured Git.
-- Set up GitHub repository.
-```
-BridgeLabz-Training/
-│── core-java-practice/
-│ │── gcr-codebase/
-│ │ │── arrays/
-│ │ │── control-flow/
-│ │ │── extras/
-│ │ │── methods/
-│ │ │── programming-elements/
-│ │ │── programming-requisites/
-│ │ │── strings/
-│ │── leet-code-codebase/
-│ │── scenario-based-codebase/
-│── README.md
-```
-- Learned basic Git commands (`init`, `clone`, `add`, `commit`, `push`).
-- Successfully pushed files to the remote repository.
+Classes and objects
 
----
+Encapsulation
 
-### 🗓 Day 2 – Git Practice & Basic Java Programs  
-**(Date: 17-Dec-2025)**
+Real-world modeling using Java classes
 
-- Practiced Git workflow to understand commits and version control.
-- Solved very basic Java programs to understand syntax and structure.
-- Practiced adding, committing, and pushing Java files to GitHub.
+Solved Java programs based on OOPS concepts to understand how objects interact within a program.
 
-🔗 **Code Link:**  
-👉 [Day 2 – Basic Java Programs](https://github.com/rishabhraj22/BridgeLabzTraining/tree/core-java-practice/gcr-codebase/program-prerequisite)
+Worked on scenario-based Java problems to apply core Java and OOPS knowledge to real-life use cases.
 
----
+Focused on writing clean, readable, and logically structured code.
 
-### 🗓 Day 3 – Programming Elements in Java  
-**(Date: 18-Dec-2025)**
+Practiced advanced Git workflow and branch management:
 
-- Studied Java programming elements:
-  - Variables and data types
-  - Operators
-  - User input and output
-- Solved practice problems based on programming elements.
-- Committed and pushed solutions to the repository.
+Used separate branches for different learning topics.
+
+Ensured Java OOPS programs and scenario-based programs were committed to the correct branches.
+
+Cleaned and organized the repository by:
+
+Removing unnecessary and duplicate folders.
+
+Deleting compiled .class files from version control.
+
+Configuring .gitignore to ignore build and IDE-specific files permanently.
+
+Followed professional Git practices:
+
+Meaningful commit messages.
+
+Safe file deletion using Git commands.
+
+Maintaining a clean and structured commit history.
+
+Successfully committed and pushed all relevant changes to the repository.
 
 🔗 **Code Link:**  
-👉 [Day 3 – Programming Elements](https://github.com/rishabhraj22/BridgeLabzTraining/tree/core-java-practice/gcr-codebase/programming-elements)
-
----
-
-### 🗓 Day 4 – Control Flow & Logical Constructs  
-**(Date: 19-Dec-2025)**
-
-- Studied logical constructs in Java:
-  - if, if-else
-  - switch statement
-  - ternary operator
-- Practiced iteration statements:
-  - for loop
-  - while loop
-  - do-while loop
-- Used `break` and `continue` statements.
-- Solved logical problems such as:
-  - Factorial
-  - Prime number check
-- Committed and pushed solutions to the repository.
-
-🔗 **Code Link:**  
-👉 [Day 4 – Control Flow](https://github.com/rishabhraj22/BridgeLabzTraining/tree/core-java-practice/gcr-codebase/control-flow)
-
----
-
-### 🗓 Day 5 – Arrays & Basic Problem Solving  
-**(Date: 20-Dec-2025)**
-
-- Studied arrays in Java:
-  - Single-dimensional arrays
-  - Multi-dimensional arrays
-- Practiced array traversal and operations.
-- Solved problems related to:
-  - Finding missing elements
-  - Basic array-based logic
-- Strengthened logical thinking using array problems.
-- Committed and pushed solutions to the repository.
-
-🔗 **Code Link:**  
-👉 [Day 5 – Arrays](https://github.com/rishabhraj22/BridgeLabzTraining/tree/core-java-practice/gcr-codebase/arrays)
-
----
-
-### 🗓 Day 6 – Strings & Methods  
-**(Date: 22-Dec-2025)**
-
-- Studied String concepts:
-  - String creation
-  - String methods
-  - Character processing
-- Implemented programs for string manipulation.
-- Studied Java methods:
-  - Method declaration
-  - Method calling
-  - Parameter passing
-- Practiced reusable logic using methods.
-- Committed and pushed solutions to the repository.
-
-🔗 **Code Link:**  
-👉 [Day 6 – Strings & Methods](https://github.com/rishabhraj22/BridgeLabzTraining/tree/core-java-practice/gcr-codebase/strings)
-
----
-
-### 🗓 Day 7 – Built-in Functions & Extra Practice  
-**(Date: 23-Dec-2025)**
-
-- Practiced Java built-in functions.
-- Implemented utility programs such as:
-  - Temperature Converter
-- Improved understanding of:
-  - Input handling
-  - Type conversion
-- Organized programs into proper folders.
-- Committed and pushed all changes successfully.
-
-🔗 **Code Link:**  
-👉 [Day 7 – Built-in Functions](https://github.com/rishabhraj22/BridgeLabzTraining/tree/core-java-practice/gcr-codebase/extras)
+👉 [Day 9 – Practice Programs of Java oops](https://github.com/rishabhraj22/BridgeLabzTraining/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/classandobject)
