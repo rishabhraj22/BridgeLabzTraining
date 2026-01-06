@@ -1,44 +1,36 @@
-🗓 Day 9 – Java OOPS Concepts, Scenario-Based Problems & Git Branch Management
+## 📅 Week 2: Object-Oriented Programming (OOPs)
 
-(Date: 25-Dec-2025)
+---
 
-Studied and implemented Object-Oriented Programming (OOPS) concepts in Java, including:
+### 🗓 Day 1 – Objects and Classes  
+*Date:* 26 December 2025
 
-Classes and objects
+On this day, I learned the fundamentals of *Object-Oriented Programming (OOPs)* in Java.
+I implemented *10 programs* (5 Level 1 + 5 Level 2) using real-world examples.
 
-Encapsulation
+### 📘 Concepts Learned
+- Classes and Objects
+- Constructors
+- Methods
+- Encapsulation
+- Real-world problem modeling
+- Memory allocation basics
 
-Real-world modeling using Java classes
+### 🟢 Level 1 Practice Programs
+1. Employee Details Program  
+2. Area & Circumference of Circle  
+3. Book Details Management  
+4. Inventory Tracking System  
+5. Mobile Phone Details Program  
 
-Solved Java programs based on OOPS concepts to understand how objects interact within a program.
+### 🔵 Level 2 Practice Programs
+1. Student Report & Grade Calculator  
+2. ATM / Bank Account Simulation  
+3. Palindrome String Checker  
+4. Movie Ticket Booking System  
+5. Shopping Cart Simulation  
 
-Worked on scenario-based Java problems to apply core Java and OOPS knowledge to real-life use cases.
+🔗 *Code Reference:*  
+👉 [Day 1 – Class and Object](https://github.com/rishabhraj22/BridgeLabzTraining/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/classandobject)
 
-Focused on writing clean, readable, and logically structured code.
-
-Practiced advanced Git workflow and branch management:
-
-Used separate branches for different learning topics.
-
-Ensured Java OOPS programs and scenario-based programs were committed to the correct branches.
-
-Cleaned and organized the repository by:
-
-Removing unnecessary and duplicate folders.
-
-Deleting compiled .class files from version control.
-
-Configuring .gitignore to ignore build and IDE-specific files permanently.
-
-Followed professional Git practices:
-
-Meaningful commit messages.
-
-Safe file deletion using Git commands.
-
-Maintaining a clean and structured commit history.
-
-Successfully committed and pushed all relevant changes to the repository.
-
-🔗 **Code Link:**  
-👉 [Day 9 – Practice Programs of Java oops](https://github.com/rishabhraj22/BridgeLabzTraining/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/classandobject)
+---
