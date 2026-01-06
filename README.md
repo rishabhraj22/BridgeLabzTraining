@@ -87,3 +87,45 @@ Hash Map & Hashing Problems
 [Week 03 – Stack, Queue & Hashing Programs](https://github.com/rishabhraj22/BridgeLabzTraining/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAPractice/src/com/stackqueue)
 
 ---
+### 🗓 Day 3: Sorting Algorithms  
+Date: 5 January 2026  
+
+#### 🔹 Topics Covered  
+
+Sorting Fundamentals
+- Understood comparison-based and non-comparison-based sorting  
+- Learned time and space complexity trade-offs  
+- Applied sorting logic to real-world scenarios  
+
+Comparison-Based Sorting
+- Bubble Sort  
+- Insertion Sort  
+- Selection Sort  
+- Merge Sort  
+- Quick Sort  
+- Heap Sort  
+
+Non-Comparison Sorting
+- Counting Sort  
+
+Best Practices
+- Chose sorting algorithms based on data size and constraints  
+- Applied stable vs unstable sorting concepts  
+- Optimized performance using divide-and-conquer strategies  
+
+### ✅ Practice Summary  
+
+Solved *7 sorting-based problems* using different algorithms:
+
+1. *Bubble Sort – Sort Student Marks*  
+2. *Insertion Sort – Sort Employee IDs*  
+3. *Merge Sort – Sort Book Prices*  
+4. *Quick Sort – Sort Product Prices*  
+5. *Selection Sort – Sort Exam Scores*  
+6. *Heap Sort – Sort Job Applicants by Salary*  
+7. *Counting Sort – Sort Student Ages*  
+
+🔗 Code link:  
+[Week 03 – Sorting Algorithms](https://github.com/rishabhraj22/BridgeLabzTraining/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAPractice/src/com/sortingalgorithms)
+
+---
