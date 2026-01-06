@@ -291,3 +291,50 @@ On the fourth day of training, the focus was on understanding *Object-Oriented D
 👉 [Day 4 – Object Oriented Design & Relationships](https://github.com/rishabhraj22/BridgeLabzTraining/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/objectmodelling)
 
 ---
+### 🗓 Day 5 – Inheritance & Polymorphism in Java  
+*Date:* 31 December 2025
+
+On the fifth day of training, the focus was on understanding *Inheritance in Java, its different types, and how it supports **code reusability, extensibility, and polymorphism*. Multiple assisted and sample problems were solved to strengthen conceptual and practical understanding.
+
+#### Activities Completed
+- Learned core inheritance concepts:
+  - Inheritance in Java
+  - Single Level Inheritance
+  - Multilevel Inheritance
+  - Hierarchical Inheritance
+  - Key Features of Inheritance
+  - Method Overriding
+  - Constructor Inheritance in Java
+  - Polymorphism and Inheritance
+  - Access Modifiers and Inheritance
+
+- Solved assisted inheritance-based problems:
+  - *Animal Hierarchy* (Animal, Dog, Cat, Bird) – method overriding and polymorphism
+  - *Employee Management System* (Employee, Manager, Developer, Intern)
+  - *Vehicle and Transport System* (Vehicle, Car, Truck, Motorcycle) with runtime polymorphism
+
+- Practiced *Single Inheritance* through:
+  - *Library Management with Books and Authors*
+  - *Smart Home Devices* (Device and Thermostat)
+
+- Practiced *Multilevel Inheritance* using:
+  - *Online Retail Order Management* (Order → ShippedOrder → DeliveredOrder)
+  - *Educational Course Hierarchy* (Course → OnlineCourse → PaidOnlineCourse)
+
+- Practiced *Hierarchical Inheritance* using:
+  - *Bank Account Types* (SavingsAccount, CheckingAccount, FixedDepositAccount)
+  - *School System with Different Roles* (Teacher, Student, Staff)
+
+- Implemented *Hybrid Inheritance (using Interfaces)*:
+  - *Restaurant Management System* using Person, Chef, Waiter, and Worker interface
+  - *Vehicle Management System* using Vehicle, ElectricVehicle, PetrolVehicle, and Refuelable interface
+
+- Applied method overriding to achieve runtime polymorphism.
+- Used access modifiers correctly across inheritance hierarchies.
+- Designed clean class hierarchies following real-world modeling principles.
+- Organized and structured programs using proper Java packages and naming conventions.
+
+🔗 *Code Reference:*  
+👉 [Day 5 – Inheritance & Polymorphism](https://github.com/rishabhraj22/BridgeLabzTraining/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/inheritence)
+
+---
