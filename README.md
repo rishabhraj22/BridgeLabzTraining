@@ -186,3 +186,35 @@ I implemented *10 programs* (5 Level 1 + 5 Level 2) using real-world examples.
 👉 [Day 1 – Class and Object](https://github.com/rishabhraj22/BridgeLabzTraining/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/classandobject)
 
 ---
+### 🗓 Day 02 – Constructors, Access Modifiers & OOPS Practice  
+*Date:* 27 December 2025
+
+On the second day of training, the focus was on understanding best practices in constructors, access modifiers, and applying OOPS concepts through hands-on practice programs.
+
+#### Practice Programs Implemented
+
+*Level 1 Constructor Practice*
+- Book class with default and parameterized constructors.
+- Circle class using constructor chaining.
+- Person class with a copy constructor.
+- Hotel Booking System using default, parameterized, and copy constructors.
+- Library Book System with book borrowing functionality.
+- Car Rental System with rental cost calculation.
+
+*Instance vs Class Variables and Methods*
+- Product Inventory Management system.
+- Online Course Management system.
+- Vehicle Registration system.
+
+*Access Modifiers Practice*
+- University Management System demonstrating public, protected, and private access.
+- Book Library System with EBook subclass.
+- Bank Account Management using SavingsAccount subclass.
+- Employee Records with Manager subclass.
+
+All programs were implemented using standard Java coding conventions and organized using proper package structure.
+
+🔗 *Code Reference:*  
+👉 [Day 2 – Constructors & Access Modifiers](https://github.com/rishabhraj22/BridgeLabzTraining/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/constructor/level1)
+
+---
