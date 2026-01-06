@@ -128,3 +128,23 @@ BridgeLabz-Training/
 
 🔗 **Code Link:**  
 👉 [Day 7 – Built-in Functions](https://github.com/rishabhraj22/BridgeLabzTraining/tree/core-java-practice/gcr-codebase/extras)
+
+### 🗓 Day 8 – LeetCode Practice & Scenario-Based Problem Solving  
+**Date:** 23 December 2025
+
+On the eighth day of training, the focus was on enhancing problem-solving skills through LeetCode challenges and implementing real-world scenario-based applications in Java.
+
+#### Activities Completed
+- Solved LeetCode problems to strengthen algorithmic thinking:
+  - **Arrays**
+    - Two Sum
+    - Remove Duplicates
+  - **Strings**
+    - Longest Common Prefix
+- Implemented scenario-based Java applications to apply concepts in real-world use cases:
+  - BMI Fitness Tracker
+  - Coffee Counter
+- Improved logical reasoning and code structuring through practical problem-solving.
+
+🔗 **Code Reference:**  
+👉 [Day 8 – LeetCode & Scenario-Based Programs](https://github.com/rishabhraj22/BridgeLabzTraining/tree/core-java-practice/scenario-based)
