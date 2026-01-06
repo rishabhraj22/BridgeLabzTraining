@@ -104,3 +104,40 @@ On the third day of training, the focus was on understanding important Java keyw
 👉 [Day 3 – Static & Final Concepts](https://github.com/rishabhraj22/BridgeLabzTraining/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/inbuiltfunction)
 
 ---
+### 🗓 Day 4 – Object Oriented Design & Relationships  
+*Date:* 30 December 2025
+
+On the fourth day of training, the focus was on understanding *Object-Oriented Design principles* and modeling real-world systems using *UML diagrams* and *object relationships*. Practical problems were solved to strengthen conceptual clarity and design thinking.
+
+#### Activities Completed
+- Learned core *Object Oriented Design Principles*:
+  - Class Diagram
+  - Object Diagram
+  - Sequence Diagram
+
+- Understood and applied object relationships:
+  - Association
+  - Aggregation
+  - Composition
+
+- Solved assisted object-modeling problems:
+  - *Library and Books* (Aggregation)
+  - *Bank and Account Holders* (Association)
+  - *Company and Departments* (Composition)
+
+- Solved self-practice design problems:
+  - *School and Students with Courses* (Association and Aggregation)
+  - *University with Faculties and Departments* (Composition and Aggregation)
+  - *Hospital, Doctors, and Patients* (Association and Communication)
+  - *E-commerce Platform with Orders, Customers, and Products*
+  - *University Management System*
+
+- Focused on identifying correct relationships between classes based on real-world scenarios.
+- Practiced communication between objects using method interactions.
+- Improved understanding of system design before implementation.
+- Followed clean class structure and naming conventions during problem-solving.
+
+🔗 *Code Reference:*  
+👉 [Day 4 – Object Oriented Design & Relationships](https://github.com/rishabhraj22/BridgeLabzTraining/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/objectmodelling)
+
+---
