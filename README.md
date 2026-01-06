@@ -338,3 +338,36 @@ On the fifth day of training, the focus was on understanding *Inheritance in Jav
 👉 [Day 5 – Inheritance & Polymorphism](https://github.com/rishabhraj22/BridgeLabzTraining/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/inheritence)
 
 ---
+### 📅 Day 6: OOPS Principles – Encapsulation, Polymorphism, Interfaces & Abstract Classes  
+Date: 1 January 2026  
+
+#### 🔹 Topics Covered
+
+Encapsulation
+- Used private access modifiers for class fields  
+- Implemented public getters and setters with validation  
+- Created immutable classes using final fields  
+
+Polymorphism
+- Programmed using interfaces instead of implementations  
+- Applied method overriding correctly  
+- Avoided explicit casting and relied on runtime polymorphism  
+
+Interfaces
+- Defined contracts for common behaviors  
+- Combined multiple interfaces for modular design  
+- Preferred composition over inheritance  
+
+Abstract Classes
+- Shared common state and behavior  
+- Used abstract classes with interfaces  
+- Avoided deep inheritance hierarchies  
+
+### ✅ Practice Summary
+- Solved multiple Java programs based on OOPS concepts  
+- Followed Java naming conventions and clean coding practices  
+- Focused on readability, maintainability, and design principles
+
+🔗 Code link: [Encapsulation, Polymorphism, Interfaces & Abstract Classes ](https://github.com/rishabhraj22/BridgeLabzTraining/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/encapsulationpolymorphism)
+
+---
