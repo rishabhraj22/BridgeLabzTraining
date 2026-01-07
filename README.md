@@ -503,3 +503,86 @@ Solved *7 sorting-based problems* using different algorithms:
 [Week 03 – Sorting Algorithms](https://github.com/rishabhraj22/BridgeLabzTraining/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAPractice/src/com/sortingalgorithms)
 
 ---
+### 🗓 Day 4: Searching & Java Utility Classes  
+**Date:** 6 January 2026  
+
+#### 🔹 Topics Covered
+
+##### Scenario-Based Object-Oriented Design
+- Designed applications from real-world problem statements  
+- Identified classes, relationships, and responsibilities  
+- Applied abstraction to convert stories into system design  
+
+##### Core OOP Concepts
+- Inheritance, Interfaces, Polymorphism, Encapsulation  
+- Constructors and constructor overloading  
+- Access modifiers for data protection  
+
+##### Java Utility Classes & File Handling
+- StringBuilder and StringBuffer best practices  
+- FileReader with BufferedReader  
+- InputStreamReader for byte-to-character conversion  
+
+##### Searching Algorithms
+- Linear Search for unsorted data  
+- Binary Search for sorted data  
+- Applied early return and bounds checking techniques  
+
+
+#### 🔹 Scenario-Based Applications Implemented
+
+1. **EduMentor – Personalized Learning Platform**  
+2. **FitTrack – Your Personal Fitness Tracker**  
+3. **PetPal – Virtual Pet Care App**  
+4. **EventEase – Event Management Platform**  
+
+
+#### 🔹 Java Utility & File Handling Problems
+
+- Reverse a string using **StringBuilder**  
+- Remove duplicates using **StringBuilder**  
+- Efficient string concatenation using **StringBuffer**  
+- Performance comparison: **StringBuffer vs StringBuilder**  
+- Read file line by line using **FileReader**  
+- Count word occurrences using **FileReader**  
+- Convert byte stream using **InputStreamReader**  
+- Read console input and write to file using **InputStreamReader**
+
+
+#### 🔹 Searching Problems Implemented
+
+### Linear Search
+- Find first negative number in an array  
+- Search a word in a list of sentences  
+
+##### Binary Search
+- Find rotation point in rotated sorted array  
+- Find a peak element in an array  
+- Search target in 2D sorted matrix  
+- Find first and last occurrence in sorted array  
+
+##### Challenge
+- First missing positive integer (Linear Search)  
+- Target index after sorting (Binary Search)  
+
+#### 🧠 Best Practices Applied
+
+- Used **StringBuilder** for mutable strings in loops  
+- Used **StringBuffer** where thread safety is required  
+- Wrapped file readers with **BufferedReader**  
+- Ensured sorted data before applying **Binary Search**  
+- Applied **encapsulation** for sensitive data  
+- Designed clean and maintainable class structures  
+
+#### ✅ Practice Summary
+
+Completed **4 scenario-based applications** and solved **multiple searching & utility problems** focusing on:
+- OOP design  
+- File handling  
+- Performance optimization  
+- Efficient searching techniques  
+
+🔗 Code link:  
+[Week 03 – Searching Algorithms](https://github.com/rishabhraj22/BridgeLabzTraining/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAPractice/src/com/Searching)
+
+---
