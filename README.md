@@ -212,3 +212,141 @@ Completed **4 scenario-based applications** and solved **multiple searching & ut
 [Week 03 – Searching Algorithms](https://github.com/rishabhraj22/BridgeLabzTraining/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAPractice/src/com/Searching)
 
 ---
+
+### 🗓 Day 5: Runtime Analysis & Big-O Notation  
+**Date:** 7 January 2026  
+
+
+#### 🔹 Topics Covered
+
+##### Scenario-Based Object-Oriented Design
+- Designed systems based on real-world problem statements  
+- Identified entities, relationships, and responsibilities  
+- Applied abstraction to convert stories into system architecture  
+
+##### Core OOP Concepts
+- Inheritance for building class hierarchies  
+- Interfaces for defining common behavior  
+- Polymorphism for dynamic method execution  
+- Encapsulation to protect sensitive and internal data  
+- Constructors and constructor overloading for flexible object creation  
+- Access modifiers for controlled data access  
+
+##### Algorithm Runtime Analysis & Big-O Notation
+- Understood time and space complexity trade-offs  
+- Analyzed algorithm performance for large datasets  
+- Compared recursive vs iterative approaches  
+- Evaluated performance of different data structures  
+- Applied best practices for writing efficient code  
+
+
+#### 🔹 Scenario-Based Applications Implemented
+
+1. **ParkEase – Smart Parking Management System**  
+2. **LoanBuddy – Loan Approval Automation**  
+3. **BookBazaar – Digital Bookstore System**  
+
+
+#### 🔹 Scenario Details
+
+##### 1. ParkEase – Smart Parking Management System
+- Base class: `Vehicle` → subclasses `Car`, `Bike`, `Truck`  
+- `ParkingSlot` class with slotId, occupancy status, vehicle type allowed  
+- Interface: `IPayable` with `calculateCharges(duration)`  
+- Encapsulation of slot availability and internal booking records  
+- Constructors for slot initialization with location and vehicle type  
+- Operators used: `(baseRate × hours) + penalty`  
+- Polymorphism in charge calculation based on vehicle type  
+
+##### 2. LoanBuddy – Loan Approval Automation
+- `Applicant` class with name, creditScore, income, loanAmount  
+- `LoanApplication` class with loan type, term, interest rate  
+- Interface: `IApprovable` with `approveLoan()` and `calculateEMI()`  
+- Inheritance: `HomeLoan`, `AutoLoan` extending base loan class  
+- Polymorphism for EMI calculation logic  
+- EMI formula applied: `P × R × (1+R)^N / ((1+R)^N – 1)`  
+- Encapsulation of credit score and internal approval logic  
+- Access control for loan status updates  
+
+##### 3. BookBazaar – Digital Bookstore System
+- `Book` base class → `EBook`, `PrintedBook` subclasses  
+- `Order` class linking users and books  
+- Interface: `IDiscountable` with `applyDiscount()`  
+- Encapsulation of inventory count  
+- Constructors with optional offers  
+- Operators used: `price × quantity – discount`  
+- Polymorphism in discount application  
+- Restricted order status updates using access modifiers  
+
+
+#### 🔹 Runtime Analysis & Big-O Practice
+
+##### Performance Comparisons Implemented
+
+- **Linear Search vs Binary Search**
+  - O(N) vs O(log N) performance on large datasets  
+  - Observed Binary Search is significantly faster for sorted data  
+
+- **Sorting Algorithms Comparison**
+  - Bubble Sort (O(N²))  
+  - Merge Sort (O(N log N))  
+  - Quick Sort (O(N log N))  
+  - Identified Bubble Sort as impractical for large datasets  
+
+- **String Concatenation Performance**
+  - String (O(N²))  
+  - StringBuilder (O(N))  
+  - StringBuffer (O(N))  
+  - Observed StringBuilder as fastest in single-threaded context  
+
+- **File Reading Efficiency**
+  - FileReader vs InputStreamReader  
+  - InputStreamReader performed better for large files  
+
+- **Recursive vs Iterative Fibonacci**
+  - Recursive: O(2ⁿ) (inefficient)  
+  - Iterative: O(N) (efficient and scalable)  
+
+- **Data Structure Search Comparison**
+  - Array: O(N)  
+  - HashSet: O(1)  
+  - TreeSet: O(log N)  
+  - HashSet observed as fastest for lookups  
+
+
+#### 🧠 Best Practices Applied
+
+- Chose correct data structures based on use case  
+- Avoided unnecessary nested loops  
+- Used early return to reduce iterations  
+- Preferred iterative solutions over expensive recursion  
+- Used StringBuilder instead of String for concatenation  
+- Used HashSet for fast lookups  
+- Designed OOP systems with clean separation of concerns  
+- Protected sensitive data using encapsulation  
+
+---
+
+#### ✅ Practice Summary
+
+Implemented **3 complete scenario-based OOP applications** and performed **in-depth runtime analysis** on multiple algorithms and data structures:
+
+##### Scenario-Based Applications
+1. ParkEase – Smart Parking Management System  
+2. LoanBuddy – Loan Approval Automation  
+3. BookBazaar – Digital Bookstore System  
+
+##### Runtime Analysis & Big-O
+- Searching algorithms comparison  
+- Sorting algorithms comparison  
+- String performance benchmarking  
+- File reading performance testing  
+- Recursive vs iterative analysis  
+- Data structure efficiency comparison  
+
+This day focused on **system design + performance optimization + algorithmic efficiency**.
+
+#### 🔗 Code link:  
+[Week 03 – Runtime Analysis & Big-O Notation](https://github.com/rishabhraj22/BridgeLabzTraining/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAPractice/src/com/runtimeanalysisandbigonotation)
+
+---
