@@ -325,7 +325,6 @@ Completed **4 scenario-based applications** and solved **multiple searching & ut
 - Designed OOP systems with clean separation of concerns  
 - Protected sensitive data using encapsulation  
 
----
 
 #### ✅ Practice Summary
 
@@ -428,8 +427,8 @@ This day focused on:
 - Business rule implementation  
 - Secure data handling using OOP principles  
 
----
 
 #### 🔗 Code link:  
 [Week 03 – Scenario Based Problem](https://github.com/rishabhraj22/BridgeLabzTraining/tree/java-oops-practice/java-oops-practice/scnario-based/OopsScenarioBased/src/com)
 
+---
