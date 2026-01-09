@@ -698,7 +698,6 @@ Completed **4 scenario-based applications** and solved **multiple searching & ut
 - Designed OOP systems with clean separation of concerns  
 - Protected sensitive data using encapsulation  
 
----
 
 #### ✅ Practice Summary
 
