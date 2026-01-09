@@ -350,3 +350,86 @@ This day focused on **system design + performance optimization + algorithmic eff
 [Week 03 – Runtime Analysis & Big-O Notation](https://github.com/rishabhraj22/BridgeLabzTraining/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAPractice/src/com/runtimeanalysisandbigonotation)
 
 ---
+### 🗓 Day 6: Scenario-Based OOP Applications (Healthcare & Travel Domain)  
+**Date:** 8 January 2026  
+
+
+#### 🔹 Topics Covered
+
+##### Scenario-Based Object-Oriented Design
+- Designed applications based on healthcare and travel industry use-cases  
+- Identified core entities, relationships, and responsibilities  
+- Applied abstraction to convert stories into structured system design  
+
+##### Core OOP Concepts
+- Inheritance for building class hierarchies  
+- Interfaces for defining common behavior  
+- Polymorphism for dynamic method execution  
+- Encapsulation to protect sensitive and internal data  
+- Constructors and constructor overloading for flexible object creation  
+- Access modifiers for controlled data access  
+
+##### Business Logic & Operators
+- Applied operators for pricing, discounts, budget calculation, and stock adjustment  
+- Designed real-world business rules inside methods  
+
+
+#### 🔹 Scenario-Based Applications Implemented
+
+1. **MediStore – Pharmacy Inventory & Sales System**  
+2. **TourMate – Travel Itinerary Planner**  
+
+
+#### 🔹 Scenario Details
+
+##### 1. MediStore – Pharmacy Inventory & Sales System
+- `Medicine` base class with name, price, expiryDate, quantity  
+- Inheritance: `Tablet`, `Syrup`, `Injection` extending `Medicine`  
+- Interface: `ISellable` with `sell()` and `checkExpiry()`  
+- Constructors with default quantity initialization  
+- Operators used for total price, discount, and stock adjustment  
+- Encapsulation of internal stock and pricing logic  
+- Polymorphism in `checkExpiry()` for preserved vs liquid medicines  
+- Sensitive pricing logic kept private using access modifiers  
+
+
+##### 2. TourMate – Travel Itinerary Planner
+- `Trip` class with destination, budget, duration  
+- Associated classes: `Transport`, `Hotel`, `Activity`  
+- Interface: `IBookable` with `book()` and `cancel()`  
+- Inheritance: `InternationalTrip`, `DomesticTrip` extending `Trip`  
+- Constructors to generate complete trip packages  
+- Operators used: `total budget = hotel + transport + activities`  
+- Encapsulation of cost breakdown inside service classes  
+- Polymorphism in booking logic based on trip type  
+
+
+#### 🧠 Best Practices Applied
+
+- Designed clean class hierarchies using inheritance  
+- Used interfaces to enforce consistent behavior  
+- Applied polymorphism for dynamic business rules  
+- Protected sensitive data using encapsulation  
+- Used constructor overloading for flexible object creation  
+- Kept pricing, stock, and cost logic private  
+- Followed single responsibility principle in class design  
+
+
+#### ✅ Practice Summary
+
+Implemented **2 complete real-world scenario-based applications**:
+
+1. **MediStore – Pharmacy Inventory & Sales System**  
+2. **TourMate – Travel Itinerary Planner**  
+
+This day focused on:
+- Healthcare domain modeling  
+- Travel domain modeling  
+- Business rule implementation  
+- Secure data handling using OOP principles  
+
+---
+
+#### 🔗 Code link:  
+[Week 03 – Scenario Based Problem](https://github.com/rishabhraj22/BridgeLabzTraining/tree/java-oops-practice/java-oops-practice/scnario-based/OopsScenarioBased/src/com)
+
