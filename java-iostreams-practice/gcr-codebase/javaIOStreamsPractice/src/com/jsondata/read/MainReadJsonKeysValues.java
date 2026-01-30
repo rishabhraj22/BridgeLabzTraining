@@ -1,0 +1,19 @@
+package com.jsondata.read;
+import com.fasterxml.jackson.databind.*;
+import java.io.*;
+import java.util.Iterator;
+import java.util.Map;
+
+public class MainReadJsonKeysValues {
+    public static void main(String[] args) throws Exception {
+
+        ObjectMapper mapper = new ObjectMapper();
+        JsonNode root = mapper.readTree(new File("data.json"));
+
+        Iterator<Map.Entry<String, JsonNode>> fields = root.fields();
+        while (fields.hasNext()) {
+            Map.Entry<String, JsonNode> entry = fields.next();
+            System.out.println(entry.getKey() + " = " + entry.getValue());
+        }
+    }
+}
