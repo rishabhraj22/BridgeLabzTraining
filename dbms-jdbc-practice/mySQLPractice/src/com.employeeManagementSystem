@@ -1,0 +1,58 @@
+-- Create Database
+CREATE DATABASE employee_db;
+USE employee_db;
+
+-- Create Table
+CREATE TABLE employees (
+    emp_id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    department VARCHAR(50),
+    salary DECIMAL(10,2)
+);
+
+-- Insert Data
+INSERT INTO employees (name, department, salary)
+VALUES
+('Rohit Sharma', 'IT', 60000),
+('Anita Verma', 'HR', 45000),
+('Rahul Singh', 'Finance', 55000);
+
+-- Output after INSERT
++--------+--------------+------------+----------+
+| emp_id | name         | department | salary   |
++--------+--------------+------------+----------+
+|      1 | Rohit Sharma | IT         | 60000.00 |
+|      2 | Anita Verma  | HR         | 45000.00 |
+|      3 | Rahul Singh  | Finance    | 55000.00 |
++--------+--------------+------------+----------+
+
+-- Update Salary
+UPDATE employees SET salary = 52000 WHERE name = 'Anita Verma';
+
+-- Output after UPDATE
++--------+--------------+------------+----------+
+| 1      | Rohit Sharma | IT         | 60000.00 |
+| 2      | Anita Verma  | HR         | 52000.00 |
+| 3      | Rahul Singh  | Finance    | 55000.00 |
++--------+--------------+------------+----------+
+
+-- Delete Employee
+DELETE FROM employees WHERE name = 'Rahul Singh';
+
+-- Output after DELETE
++--------+--------------+------------+----------+
+| 1      | Rohit Sharma | IT         | 60000.00 |
+| 2      | Anita Verma  | HR         | 52000.00 |
++--------+--------------+------------+----------+
+
+-- Search by Name
+SELECT * FROM employees WHERE name = 'Anita Verma';
+
+-- Output after search
++--------+-------------+------------+----------+
+| emp_id | name        | department | salary   |
++--------+-------------+------------+----------+
+|      2 | Anita Verma | HR         | 52000.00 |
++--------+-------------+------------+----------+
+
+
