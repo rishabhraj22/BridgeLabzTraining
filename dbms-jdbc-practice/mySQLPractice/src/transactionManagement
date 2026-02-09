@@ -1,0 +1,86 @@
+-- Create Database
+CREATE DATABASE bank_db;
+USE bank_db;
+
+-- Create Accounts Table
+CREATE TABLE accounts (
+    account_id INT AUTO_INCREMENT PRIMARY KEY,
+    holder_name VARCHAR(100) NOT NULL,
+    balance DECIMAL(12,2) NOT NULL
+);
+
+-- Create Transactions Table (History)
+CREATE TABLE transactions (
+    txn_id INT AUTO_INCREMENT PRIMARY KEY,
+    from_account INT,
+    to_account INT,
+    amount DECIMAL(12,2),
+    txn_time DATETIME DEFAULT CURRENT_TIMESTAMP,
+    status VARCHAR(20)
+);
+
+-- Insert Sample Accounts
+INSERT INTO accounts (holder_name, balance)
+VALUES
+('Rohit Sharma', 50000),
+('Anita Verma', 30000),
+('Amit Singh', 20000);
+
+-- View Accounts (Initial State)
+SELECT * FROM accounts;
+
++------------+--------------+----------+
+| account_id | holder_name  | balance  |
++------------+--------------+----------+
+| 1          | Rohit Sharma | 50000.00 |
+| 2          | Anita Verma  | 30000.00 |
+| 3          | Amit Singh   | 20000.00 |
++------------+--------------+----------+
+
+-- Check Balance of Account ID = 2
+SELECT account_id, holder_name, balance
+FROM accounts
+WHERE account_id = 2;
+
++------------+-------------+----------+
+| account_id | holder_name | balance  |
++------------+-------------+----------+
+| 2          | Anita Verma | 30000.00 |
++------------+-------------+----------+
+
+-- Transfer 5000 from Rohit (1) to Anita (2) using TRANSACTION
+START TRANSACTION;
+
+UPDATE accounts
+SET balance = balance - 5000
+WHERE account_id = 1;
+
+UPDATE accounts
+SET balance = balance + 5000
+WHERE account_id = 2;
+
+INSERT INTO transactions (from_account, to_account, amount, status)
+VALUES (1, 2, 5000, 'SUCCESS');
+
+COMMIT;
+
+-- View Accounts After Transfer
+SELECT * FROM accounts;
+
++------------+--------------+----------+
+| account_id | holder_name  | balance  |
++------------+--------------+----------+
+| 1          | Rohit Sharma | 45000.00 |
+| 2          | Anita Verma  | 35000.00 |
+| 3          | Amit Singh   | 20000.00 |
++------------+--------------+----------+
+
+-- View Transaction History
+SELECT * FROM transactions;
+
++--------+--------------+------------+--------+---------------------+----------+
+| txn_id | from_account | to_account | amount | txn_time            | status   |
++--------+--------------+------------+--------+---------------------+----------+
+| 1      | 1            | 2          | 5000.00| 2026-02-09 12:30:00 | SUCCESS  |
++--------+--------------+------------+--------+---------------------+----------+
+
