@@ -1,0 +1,171 @@
+-- Create Database
+CREATE DATABASE library_db;
+USE library_db;
+
+-- Create Books Table (Inventory)
+CREATE TABLE books (
+    book_id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(150) NOT NULL,
+    author VARCHAR(100) NOT NULL,
+    category VARCHAR(50),
+    total_copies INT NOT NULL,
+    available_copies INT NOT NULL
+);
+
+-- Create Students Table
+CREATE TABLE students (
+    student_id INT AUTO_INCREMENT PRIMARY KEY,
+    student_name VARCHAR(100) NOT NULL,
+    course VARCHAR(50)
+);
+
+-- Create Borrow Records Table
+CREATE TABLE borrow_records (
+    record_id INT AUTO_INCREMENT PRIMARY KEY,
+    book_id INT,
+    student_id INT,
+    borrow_date DATE,
+    return_date DATE,
+    fine DECIMAL(10,2) DEFAULT 0.00,
+    status VARCHAR(20),
+    FOREIGN KEY (book_id) REFERENCES books(book_id),
+    FOREIGN KEY (student_id) REFERENCES students(student_id)
+);
+
+-- Insert Sample Books
+INSERT INTO books (title, author, category, total_copies, available_copies)
+VALUES
+('Clean Code', 'Robert C. Martin', 'Programming', 5, 5),
+('Effective Java', 'Joshua Bloch', 'Programming', 4, 4),
+('Database System Concepts', 'Silberschatz', 'Database', 3, 3),
+('Operating System Concepts', 'Silberschatz', 'OS', 2, 2);
+
+-- Insert Sample Students
+INSERT INTO students (student_name, course)
+VALUES
+('Rohit Sharma', 'BCA'),
+('Anita Verma', 'MCA'),
+('Rahul Singh', 'BTech');
+
+-- View Books Inventory
+SELECT * FROM books;
+
++---------+----------------------------+-------------------+-------------+--------------+------------------+
+| book_id | title                      | author            | category    | total_copies | available_copies|
++---------+----------------------------+-------------------+-------------+--------------+------------------+
+| 1       | Clean Code                 | Robert C. Martin  | Programming | 5            | 5                |
+| 2       | Effective Java             | Joshua Bloch      | Programming | 4            | 4                |
+| 3       | Database System Concepts   | Silberschatz      | Database    | 3            | 3                |
+| 4       | Operating System Concepts  | Silberschatz      | OS          | 2            | 2                |
++---------+----------------------------+-------------------+-------------+--------------+------------------+
+
+-- View Students
+SELECT * FROM students;
+
++------------+--------------+--------+
+| student_id | student_name | course |
++------------+--------------+--------+
+| 1          | Rohit Sharma | BCA    |
+| 2          | Anita Verma  | MCA    |
+| 3          | Rahul Singh  | BTech  |
++------------+--------------+--------+
+
+-- Borrow a Book: Rohit (1) borrows "Clean Code" (1)
+START TRANSACTION;
+
+INSERT INTO borrow_records (book_id, student_id, borrow_date, status)
+VALUES (1, 1, CURDATE(), 'BORROWED');
+
+UPDATE books
+SET available_copies = available_copies - 1
+WHERE book_id = 1;
+
+COMMIT;
+
+-- Check Books After Borrow
+SELECT * FROM books;
+
++---------+----------------------------+-------------------+-------------+--------------+------------------+
+| book_id | title                      | author            | category    | total_copies | available_copies|
++---------+----------------------------+-------------------+-------------+--------------+------------------+
+| 1       | Clean Code                 | Robert C. Martin  | Programming | 5            | 4                |
+| 2       | Effective Java             | Joshua Bloch      | Programming | 4            | 4                |
+| 3       | Database System Concepts   | Silberschatz      | Database    | 3            | 3                |
+| 4       | Operating System Concepts  | Silberschatz      | OS          | 2            | 2                |
++---------+----------------------------+-------------------+-------------+--------------+------------------+
+
+-- View Borrow Records
+SELECT * FROM borrow_records;
+
++-----------+---------+------------+-------------+-------------+------+----------+
+| record_id | book_id | student_id | borrow_date | return_date | fine | status   |
++-----------+---------+------------+-------------+-------------+------+----------+
+| 1         | 1       | 1          | 2026-02-09  | NULL        | 0.00 | BORROWED |
++-----------+---------+------------+-------------+-------------+------+----------+
+
+-- Return Book and Calculate Fine (Assume 10 days late, fine = 10 * 5 = 50)
+UPDATE borrow_records
+SET return_date = DATE_ADD(borrow_date, INTERVAL 10 DAY),
+    fine = 50,
+    status = 'RETURNED'
+WHERE record_id = 1;
+
+UPDATE books
+SET available_copies = available_copies + 1
+WHERE book_id = 1;
+
+-- Check Books After Return
+SELECT * FROM books;
+
++---------+----------------------------+-------------------+-------------+--------------+------------------+
+| book_id | title                      | author            | category    | total_copies | available_copies|
++---------+----------------------------+-------------------+-------------+--------------+------------------+
+| 1       | Clean Code                 | Robert C. Martin  | Programming | 5            | 5                |
+| 2       | Effective Java             | Joshua Bloch      | Programming | 4            | 4                |
+| 3       | Database System Concepts   | Silberschatz      | Database    | 3            | 3                |
+| 4       | Operating System Concepts  | Silberschatz      | OS          | 2            | 2                |
++---------+----------------------------+-------------------+-------------+--------------+------------------+
+
+-- View Borrow Records After Return
+SELECT * FROM borrow_records;
+
++-----------+---------+------------+-------------+-------------+------+----------+
+| record_id | book_id | student_id | borrow_date | return_date | fine | status   |
++-----------+---------+------------+-------------+-------------+------+----------+
+| 1         | 1       | 1          | 2026-02-09  | 2026-02-19  | 50.00| RETURNED |
++-----------+---------+------------+-------------+-------------+------+----------+
+
+-- Search Functionality with Multiple Filters
+-- 1) Search by Category = 'Programming'
+SELECT * FROM books
+WHERE category = 'Programming';
+
++---------+----------------+------------------+-------------+--------------+------------------+
+| book_id | title          | author           | category    | total_copies | available_copies |
++---------+----------------+------------------+-------------+--------------+------------------+
+|       1 | Clean Code     | Robert C. Martin | Programming |            5 |                5 |
+|       2 | Effective Java | Joshua Bloch     | Programming |            4 |                4 |
++---------+----------------+------------------+-------------+--------------+------------------+
+
+-- 2) Search by Author = 'Silberschatz'
+SELECT * FROM books
+WHERE author = 'Silberschatz';
+
++---------+---------------------------+--------------+----------+--------------+------------------+
+| book_id | title                     | author       | category | total_copies | available_copies |
++---------+---------------------------+--------------+----------+--------------+------------------+
+|       3 | Database System Concepts  | Silberschatz | Database |            3 |                3 |
+|       4 | Operating System Concepts | Silberschatz | OS       |            2 |                2 |
++---------+---------------------------+--------------+----------+--------------+------------------+
+
+-- 3) Search by Category and Author
+SELECT * FROM books
+WHERE category = 'Programming'
+AND author = 'Joshua Bloch';
+
++---------+----------------+--------------+-------------+--------------+------------------+
+| book_id | title          | author       | category    | total_copies | available_copies |
++---------+----------------+--------------+-------------+--------------+------------------+
+|       2 | Effective Java | Joshua Bloch | Programming |            4 |                4 |
++---------+----------------+--------------+-------------+--------------+------------------+
+
